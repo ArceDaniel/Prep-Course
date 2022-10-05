@@ -1,0 +1,55 @@
+
+#foto{
+    width: 350px; 
+    height:350px;
+    margin: 6px;
+    border: solid 6px black;
+    float: left;
+}
+.about-me{
+
+    float:right;
+    width: 55%; 
+    margin: 6px;
+    
+}
+h2{
+    margin: 2%;
+}
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+#principal{
+    border: solid 1px;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    background: linear-gradient(rgba(62, 62, 91, 0.1),rgba(62, 62, 91, 0.1)),
+    url("./img/fondo.jpg");
+    background-size: 100%;
+    font-size: 20px;
+}
+fieldset{
+    margin-bottom: 10px;
+    display: block;
+}
+legend{
+    border: solid 1px orange;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 23px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+body{
+    background-color: black;
+}
