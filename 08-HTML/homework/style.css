@@ -1,0 +1,16 @@
+h1 {
+    color: crimson;
+};
+img {
+    width: 400px;
+}
+#thirdDiv {
+    width: 700px;
+    height: 800px;
+    background-color: darkkhaki;
+    padding: 50px;
+}
+#spamID{
+    font-size: 18px;
+    margin: 50px;
+}
