@@ -22,6 +22,11 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var objeto = {}; 
+    for(var i in string){
+        objeto[string[i]] = ( objeto[string[i]] || 0 ) + 1; // Incrementamos el valor si el elemento ya existe
+    }
+    return objeto;
 }
 
 
@@ -30,6 +35,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var string=""; 
+  var string2=""; 
+    for(var i in s){
+        if(s[i]===s[i].toUpperCase()){
+          string+= s[i];
+        } else{
+          string2+= s[i]
+        }
+    }
+    string+=string2
+    return string;
 }
 
 
@@ -39,7 +55,11 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
-} 
+  
+  let strProv = str.split('').reverse().join('');
+  return strProv.split(' ').reverse().join(' ');
+}
+
 
 
 function capicua(numero){
